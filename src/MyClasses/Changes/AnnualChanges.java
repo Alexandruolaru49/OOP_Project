@@ -9,7 +9,7 @@ public class AnnualChanges {
     private Double newSantaBudget;
     private ArrayList<Gift> newGifts;
     private ArrayList<Child> newChildren;
-    private ArrayList<Child> childrenUpdates;
+    private ArrayList<ChildrenUpdate> childrenUpdates;
 
     public Double getNewSantaBudget() {
         return newSantaBudget;
@@ -35,11 +35,19 @@ public class AnnualChanges {
         this.newChildren = newChildren;
     }
 
-    public ArrayList<Child> getChildrenUpdates() {
+//    public ArrayList<Child> getChildrenUpdates() {
+//        return childrenUpdates;
+//    }
+//
+//    public void setChildrenUpdates(final ArrayList<Child> childrenUpdates) {
+//        this.childrenUpdates = childrenUpdates;
+//    }
+
+    public ArrayList<ChildrenUpdate> getChildrenUpdates() {
         return childrenUpdates;
     }
 
-    public void setChildrenUpdates(final ArrayList<Child> childrenUpdates) {
+    public void setChildrenUpdates(ArrayList<ChildrenUpdate> childrenUpdates) {
         this.childrenUpdates = childrenUpdates;
     }
 }

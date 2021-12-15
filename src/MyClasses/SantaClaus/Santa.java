@@ -4,6 +4,7 @@ import MyClasses.Children.Child;
 import MyClasses.Presents.Gift;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Santa {
 
@@ -24,6 +25,14 @@ public class Santa {
     private ArrayList<Gift> santaGiftsList;
 
     public Double getAllScores(ArrayList<Child> children) {
+
+        children.sort(new Comparator<Child>() {
+            @Override
+            public int compare(Child o1, Child o2) {
+                return Integer.compare(o1.getId(), o2.getId());
+            }
+        });
+
         Double sum = 0d;
         for (Child i : children) {
             sum = sum + i.getAverageScore();

@@ -2,41 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d662010a-d6c5-4bb5-92a6-5b13c2206c94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Baby.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Baby.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Child.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Kid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Kid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Teen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Teen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/YoungAdult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/YoungAdult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Factory/ChildrenFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Factory/ChildrenFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/SantaClaus/Santa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/SantaClaus/Santa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/BabyUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/BabyUpdateStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/YoungAdultUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/YoungAdultUpdateStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/SimulationFlow/Initialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/SimulationFlow/Initialize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/proiect1/main/Writer/Writer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/FinalOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Changes/AnnualChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Changes/AnnualChanges.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/BabyUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/BabyUpdateStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/UpdateChildrenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/UpdateChildrenStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reader/InputLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader/InputLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Writer/Writer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +44,29 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FOLDER POO/REPO POO" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="OOP_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="proiect1" />
       <extension name="coverage">
@@ -93,8 +79,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

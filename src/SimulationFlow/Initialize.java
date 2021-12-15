@@ -1,12 +1,17 @@
 package SimulationFlow;
 
+import MyClasses.Changes.AnnualChanges;
+import MyClasses.Changes.ChildrenUpdate;
 import MyClasses.Children.Child;
 import MyClasses.Factory.ChildrenFactory;
+import MyClasses.Presents.Gift;
 import MyClasses.SantaClaus.Santa;
+import MyClasses.Strategies.ApplyStrategy;
 import MyClasses.Strategies.StrategyFactory;
 import MyClasses.Strategies.UpdateChildrenStrategy;
 import Reader.Input;
 import common.Constants;
+import enums.Category;
 
 import java.util.ArrayList;
 
@@ -27,7 +32,7 @@ public class Initialize {
 
 
 
-    public ArrayList<Child> makeInitialList(Santa santa, Input input) {
+    public ArrayList<Child> makeInitialList(Input input) {
 
         ArrayList<Child> initialList = new ArrayList<Child>();
         ArrayList<Child> children = input.getChildren();
@@ -42,31 +47,12 @@ public class Initialize {
     }
 
     public ArrayList<Child> getUpdatedList(Santa santa, Input input) {
-        ArrayList<Child> initialList = makeInitialList(santa,input);
-        ArrayList<Child> updatedList = new ArrayList<Child>();
-        for (int i = 0; i < initialList.size(); i++) {
-            Child child = initialList.get(i);
-            String type = "";
-            if (child.getAge() < Constants.BABY_UPPER) {
-                type = Constants.BABY;
-            }
-            if (child.getAge() >= Constants.KID_LOWER && child.getAge() < Constants.KID_UPPER) {
-                type = Constants.KID;
-            }
-            if (child.getAge() >= Constants.TEEN_LOWER && child.getAge() < Constants.TEEN_UPPER) {
-                type = Constants.TEEN;
-            }
-//            if (child.getAge() > Constants.YOUNG_ADULT_AGE) {
-//                type = Constants.YOUNG_ADULT;
-//            }
+        ArrayList<Child> initialList = makeInitialList(input);
+        ArrayList<Child> updatedList;
+        ApplyStrategy objApplyStrategy = new ApplyStrategy();
 
-            // Cream copilul cu ChildrenFactory.createChild si aplicam strategia
-            Child newChild = ChildrenFactory.createChild(type, child);
-            UpdateChildrenStrategy strategy = StrategyFactory.createStrategy(type, newChild);
-            strategy.calculateAverageScore(newChild);
-            updatedList.add(newChild);
-        }
-
+        //Am aplicat strategia
+        updatedList = objApplyStrategy.applyStrategy(initialList);
 
         for (int i = 0; i < updatedList.size(); i++) {
             Child child = updatedList.get(i);
@@ -82,4 +68,119 @@ public class Initialize {
         ArrayList<Child> firstYearList = getUpdatedList(santa, input);
         return firstYearList;
     }
+
+    public ArrayList<Child> increaseAge(ArrayList<Child> childrenList) {
+        //Eliminam copiii care au varsta > 18 ani
+        for (int i = 0; i < childrenList.size(); i++) {
+            Child child = childrenList.get(i);
+            child.setAge(child.getAge() + 1);
+        }
+        for (int i = 0; i < childrenList.size(); i++) {
+            Child child = childrenList.get(i);
+            if (child.getAge() > Constants.YOUNG_ADULT_AGE) {
+                childrenList.remove(i);
+            }
+        }
+        return childrenList;
+    }
+
+    public ArrayList<Child> updateWithNewChildren(ArrayList<Child> childrenList,
+                                                  ArrayList<Child> newChildren) {
+        for (int i = 0; i < newChildren.size(); i++) {
+            Child child = newChildren.get(i);
+            if (child.getAge() <= Constants.YOUNG_ADULT_AGE) {
+                childrenList.add(child);
+            }
+        }
+        return childrenList;
+    }
+
+    public void addNewGifts(Santa santa, ArrayList<Gift> newGifts) {
+        for(int i = 0; i < newGifts.size(); i++) {
+            Gift gift = newGifts.get(i);
+            santa.getSantaGiftsList().add(gift);
+        }
+    }
+
+    public void removeDuplicateCategories(ArrayList<Category> initialList,
+                                          ArrayList<Category> updatedList) {
+        for (int i = 0; i < updatedList.size(); i++) {
+            for (int j = 0; j < initialList.size(); j++) {
+                if (initialList.get(j).equals(updatedList.get(i))) {
+                   initialList.remove(j);
+                }
+            }
+        }
+    }
+
+    public void updateGiftPreferences(ArrayList<Category> initialList,
+                                      ArrayList<Category> updatedList) {
+        for (int i = 0; i < initialList.size(); i++) {
+            updatedList.add(initialList.get(i));
+        }
+    }
+
+    public void makeUpdates(ArrayList<Child> childrenList,
+                            ArrayList<ChildrenUpdate> childrenUpdates) {
+
+        for (int i = 0; i < childrenUpdates.size(); i++) {
+            int id = childrenUpdates.get(i).getId();
+            Double niceScore = childrenUpdates.get(i).getNiceScore();
+            ArrayList<Category> giftsPreferences = childrenUpdates.get(i).getGiftsPreferences();
+
+            for (int j = 0; j < childrenList.size(); j++) {
+                if (childrenList.get(j).getId() == id) {
+                    //Adaugam noul niceScore daca nu este null
+                    if (niceScore != null) {
+                        childrenList.get(j).getNiceScoreHistory().add(niceScore);
+                    }
+                    //Adaugam noile preferinte
+                    if (giftsPreferences != null) {
+                        removeDuplicateCategories(childrenList.get(j).getGiftsPreferences(),
+                                giftsPreferences);
+                        updateGiftPreferences(childrenList.get(j).getGiftsPreferences(),
+                                giftsPreferences);
+                        childrenList.get(j).setGiftsPreferences(giftsPreferences);
+                    }
+                }
+            }
+        }
+    }
+
+    public ArrayList<Child> getAnnualList(ArrayList<Child> childrenList, Santa santa,
+                                          Input input, int year) {
+
+        AnnualChanges changes = input.getAnnualChanges().get(year - 1);
+        Double newSantaBudget = changes.getNewSantaBudget();
+        ArrayList<Child> newChildren = changes.getNewChildren();
+        ArrayList<ChildrenUpdate> childrenUpdates = changes.getChildrenUpdates();
+        ArrayList<Gift> newGifts = changes.getNewGifts();
+
+        //Am crescut varsta copiilor
+        childrenList = increaseAge(childrenList);
+        //Am inserat copiii noi in lista
+        childrenList = updateWithNewChildren(childrenList, newChildren);
+        //Am setat noul buget si am inserat cadourile noi
+        santa.setSantaBudget(newSantaBudget);
+        addNewGifts(santa, newGifts);
+        //Am actualizat niceScore-ul si preferintele copiilor
+        makeUpdates(childrenList, childrenUpdates);
+
+        ArrayList<Child> updatedList;
+        ApplyStrategy objApplyStrategy = new ApplyStrategy();
+
+        //Am aplicat strategia
+        updatedList = objApplyStrategy.applyStrategy(childrenList);
+
+        for (int i = 0; i < updatedList.size(); i++) {
+            Child child = updatedList.get(i);
+            child.calculateAssignedBudget(santa, updatedList);
+            child.calculateReceivedGifts(santa);
+            //child.getNiceScoreHistory().add(child.getNiceScore());
+            //newChild.setAge(newChild.getAge() + 1);
+        }
+
+        return updatedList;
+    }
+
 }
