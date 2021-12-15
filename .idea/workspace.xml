@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d662010a-d6c5-4bb5-92a6-5b13c2206c94" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Baby.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Baby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Child.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Kid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Kid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Teen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/Teen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/YoungAdult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Children/YoungAdult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Factory/ChildrenFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Factory/ChildrenFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/SantaClaus/Santa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/SantaClaus/Santa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/BabyUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/BabyUpdateStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/YoungAdultUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/MyClasses/Strategies/YoungAdultUpdateStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/Reader/InputLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/SimulationFlow/Initialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/SimulationFlow/Initialize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiect1/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiect1/main/Writer/Writer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/FinalOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/BabyUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/BabyUpdateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/UpdateChildrenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/UpdateChildrenStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reader/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reader/InputLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reader/InputLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Writer/Writer.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="21v2UmCFgudLtO2NUqgyGG5QiA1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FOLDER POO/REPO POO" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="proiect1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d662010a-d6c5-4bb5-92a6-5b13c2206c94" name="Changes" comment="" />
+      <created>1638807258397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638807258397</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
