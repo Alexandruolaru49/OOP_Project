@@ -21,9 +21,9 @@ public class ChildrenFactory {
             case Constants.TEEN: {
                 return new Teen(child); //copy-constructor
             }
-//            case Constants.YOUNG_ADULT: {
-//                return new YoungAdult(child); //copy-constructor
-//            }
+            case Constants.YOUNG_ADULT: {
+                return new YoungAdult(child); //copy-constructor
+            }
         }
         throw new IllegalArgumentException("The child type " + type + " is not recognized.");
     }

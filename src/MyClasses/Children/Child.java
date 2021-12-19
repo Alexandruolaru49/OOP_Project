@@ -12,9 +12,11 @@ public class Child {
     private int id;
     private String lastName;
     private String firstName;
-    private int age;
     private Cities city;
-    private Double niceScore;
+    private int age;
+
+    private Double niceScore; //!!
+
     private ArrayList<Category> giftsPreferences;
     private Double averageScore;
     private ArrayList<Double> niceScoreHistory = new ArrayList<Double>();
@@ -39,9 +41,6 @@ public class Child {
             }
         });
 
-//        List<Gift> sortedGifts = gifts.stream().sorted(Comparator.comparingDouble(Gift::getPrice))
-//                .collect(Collectors.toList());
-
         Double budget = this.getAssignedBudget();
         ArrayList<Gift> giftsReceived = new ArrayList<Gift>();
 
@@ -49,6 +48,7 @@ public class Child {
             for (int i = 0; i < gifts.size(); i++) {
                 if (gifts.get(i).getCategory().equals(category)) {
                     if (budget > gifts.get(i).getPrice()) {
+                        budget = budget - gifts.get(i).getPrice();
                         giftsReceived.add(gifts.get(i));
                         gifts.remove(i);
                         break;
@@ -99,7 +99,7 @@ public class Child {
         this.city = city;
     }
 
-    public Double getNiceScore() {
+    public Double accessNiceScore() {
         return niceScore;
     }
 

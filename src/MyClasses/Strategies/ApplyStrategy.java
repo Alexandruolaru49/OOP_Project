@@ -23,9 +23,9 @@ public class ApplyStrategy {
             if (child.getAge() >= Constants.TEEN_LOWER && child.getAge() <= Constants.TEEN_UPPER) {
                 type = Constants.TEEN;
             }
-//            if (child.getAge() > Constants.YOUNG_ADULT_AGE) {
-//                type = Constants.YOUNG_ADULT;
-//            }
+            if (child.getAge() > Constants.YOUNG_ADULT_AGE) {
+                type = Constants.YOUNG_ADULT;
+            }
 
             // Cream copilul cu ChildrenFactory.createChild si aplicam strategia
             Child newChild = ChildrenFactory.createChild(type, child);

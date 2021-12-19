@@ -2,11 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d662010a-d6c5-4bb5-92a6-5b13c2206c94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/Changes/AnnualChanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Changes/AnnualChanges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/SantaClaus/Santa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkstyle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/checkstyle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Baby.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Baby.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Child$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Child$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Child.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Kid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Kid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Teen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/Teen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/YoungAdult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Children/YoungAdult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Factory/ChildrenFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Factory/ChildrenFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/ApplyStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/ApplyStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/KidUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/KidUpdateStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/StrategyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/StrategyFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/TeenUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/TeenUpdateStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/YoungAdultUpdateStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/MyClasses/Strategies/YoungAdultUpdateStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/SimulationFlow/Initialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/SimulationFlow/Initialize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/SimulationFlow/UpdateList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/common/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/common/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/main/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/main/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/main/Main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Project/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Project/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Baby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Kid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/Teen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Children/YoungAdult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Factory/ChildrenFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/ApplyStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/ApplyStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/KidUpdateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/StrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/StrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/TeenUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/TeenUpdateStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyClasses/Strategies/YoungAdultUpdateStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimulationFlow/Initialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimulationFlow/UpdateList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimulationFlow/Updates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +61,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="21v2UmCFgudLtO2NUqgyGG5QiA1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">

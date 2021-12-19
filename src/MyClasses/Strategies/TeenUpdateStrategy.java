@@ -14,7 +14,7 @@ public class TeenUpdateStrategy implements UpdateChildrenStrategy {
     @Override
     public void calculateAverageScore(Child child) {
         if (child.getNiceScoreHistory().size() == 0) {
-            child.setAverageScore(child.getNiceScore());
+            child.setAverageScore(child.accessNiceScore());
         } else {
             Double sum = 0d;
             for (int i = 0; i < child.getNiceScoreHistory().size(); i++) {

@@ -16,7 +16,7 @@ public class StrategyFactory {
                 return new TeenUpdateStrategy(child);
             }
             case Constants.YOUNG_ADULT: {
-                // nothing happens
+                return new YoungAdultUpdateStrategy(child);
             }
         }
         throw new IllegalArgumentException("The strategy type " + strategy + " is not recognized.");
