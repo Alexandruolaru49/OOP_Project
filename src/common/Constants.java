@@ -26,6 +26,7 @@ public final class Constants {
     public static final Integer TEEN_LOWER = 12;
     public static final Integer TEEN_UPPER = 18;
     public static final Integer YOUNG_ADULT_AGE = 18;
+    public static final Double BABY_AVERAGE_SCORE = 10d;
 
 
     private Constants() {

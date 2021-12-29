@@ -1,22 +1,19 @@
 package main;
 
-import MyClasses.Children.Child;
-import MyClasses.SantaClaus.Santa;
-import Reader.Input;
-import Reader.InputLoader;
-import SimulationFlow.Initialize;
-import Writer.Output;
-import Writer.WriteOutput;
+import classes.Children.Child;
+import classes.SantaClaus.Santa;
+import reader.Input;
+import reader.InputLoader;
+import simulation.Initialize;
+import writer.Auxiliary;
+import writer.Output;
+import writer.WriteOutput;
 import checker.Checker;
-
+import common.Constants;
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Objects;
+
 
 public final class Main {
 
@@ -24,6 +21,12 @@ public final class Main {
         ///constructor for checkstyle
     }
 
+    /**
+     * Metoda folosita pentru a sterge fisierele de output create
+     * (preluata de la prima tema primita)
+     * @param directory
+     *          director
+     */
     public void deleteFiles(final File[] directory) {
         if (directory != null) {
             for (File file : directory) {
@@ -34,39 +37,44 @@ public final class Main {
         }
     }
     /**
-     * This method is used to call the checker which calculates the score
+     * Metoda folosita pentru a crea fisierele de output; apeleaza metoda
+     * "action" trimitand ca parametri calea de input si calea de output;
+     * apeleaza checkerul pentru a calcula punctajul.
      * @param args
      *          the arguments used to call the main method
      */
-    public static void main(final String[] args) throws IOException {
+    public static void main(final String[] args) {
 
-            File directory = new File("tests/");
-            Path path = Paths.get("results");
-            if (!Files.exists(path)) {
-                Files.createDirectories(path);
-            }
-
-            File outputDirectory = new File("results");
-
+            File outputDirectory = new File("output");
             Main main = new Main();
             main.deleteFiles(outputDirectory.listFiles());
-            int count = 1;
-            for (File file : Objects.requireNonNull(directory.listFiles())) {
-
-                String filepath = "results/out_" + file.getName();
-                File out = new File(filepath);
-                boolean isCreated = out.createNewFile();
-                if (isCreated) {
-                    System.out.println("Test " + count);
-                    count++;
-                    action(file.getAbsolutePath(), filepath);
-                }
+            int numberOfTests = Constants.TESTS_NUMBER;
+            for (int i = 1; i <= numberOfTests; i++) {
+                String inputPath = "tests/test" + i + ".json";
+                String outputPath = "output/out_" + i + ".json";
+                action(inputPath, outputPath);
             }
 
             Checker.calculateScore();
         }
 
-
+    /**
+     *  Metoda citeste datele de intrare prin metoda "read";
+     *  Cu ajutorul acestor informatii, este creata lista de copii
+     *  din anul 0, iar apoi restul. Aceste liste sunt adaugate in
+     *  campul annualChildren al obiectului output, care este folosit
+     *  ca parametru la scrierea in fisiere. Pe langa cele de citire, sunt
+     *  apelate urmatoarele metode: "getFirstYearList" care construieste
+     *  lista initiala a copiilor, metoda de setare a listei curente drept camp
+     *  pentru obiectul auxiliar, metoda de adaugare a listei curente
+     *  la cele deja existente ("addList") si metoda "getAnnualList" care
+     *  creeaza lista pentru urmatorul an. La final se apeleaza metoda de
+     *  scriere in fisiere "write".
+     * @param inputPath
+     *          calea de input, de unde vor fi citite datele
+     * @param outputPath
+     *          calea de output, unde vor fi scrise datele
+     */
     public static void action(final String inputPath,
                               final String outputPath) {
 
@@ -78,51 +86,47 @@ public final class Main {
         santa.setSantaBudget(input.getSantaBudget());
         santa.setSantaGiftsList(input.getSantaGiftsList());
 
+
         Initialize initialize = Initialize.getInstance();
         ArrayList<Child> childrenList;
         childrenList = initialize.getFirstYearList(santa, input);
 
         childrenList.sort(new Comparator<Child>() {
             @Override
-            public int compare(Child o1, Child o2) {
+            public int compare(final Child o1, final Child o2) {
                 return Integer.compare(o1.getId(), o2.getId());
             }
         });
-        System.out.println(santa.getSantaBudget());
-        for(Child i : childrenList) {
-            System.out.println(i.toString());
-            i.displayReceivedGifts();
-        }
+
+        Output output = new Output();
+        Auxiliary auxiliary = new Auxiliary();
+
+        auxiliary.setChildren(childrenList);
+
+        output.addList(auxiliary);
 
         int noYears = input.getNumberOfYears();
+        for (int year = 1; year <= noYears; year++) {
+
+            ArrayList<Child> newList = initialize.getAnnualList(childrenList, santa, input, year);
+            newList.sort(new Comparator<Child>() {
+                @Override
+                public int compare(final Child o1, final Child o2) {
+                    return Integer.compare(o1.getId(), o2.getId());
+                }
+            });
+
+            auxiliary = new Auxiliary();
+            auxiliary.setChildren(newList);
+            output.addList(auxiliary);
+
+            childrenList = new ArrayList<>();
+            for (int i = 0; i < newList.size(); i++) {
+                childrenList.add(new Child(newList.get(i)));
+            }
+        }
+
         WriteOutput writeOutput = new WriteOutput();
-        //write in output files initial list
-        Output output = new Output();
-        output.setAnnualChildren(childrenList);
         writeOutput.write(output, outputPath);
-
-
-//        for(int year = 1; year <= noYears; year++) {
-//            ArrayList<Child> newList = initialize.getAnnualList(childrenList, santa, input, year);
-//
-//            newList.sort(new Comparator<Child>() {
-//                @Override
-//                public int compare(Child o1, Child o2) {
-//                    return Integer.compare(o1.getId(), o2.getId());
-//                }
-//            });
-//
-//            output.setAnnualChildren(newList);
-//            System.out.println(santa.getSantaBudget());
-//            for(Child i : newList) {
-//                System.out.println(i.toString());
-//                i.displayReceivedGifts();
-//            }
-//            //write updated list to output files
-//
-//            writeOutput.write(output, outputPath);
-//            childrenList = newList;
-//        }
-
     }
 }
