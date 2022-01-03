@@ -61,7 +61,8 @@ public final class Main {
     /**
      *  Metoda citeste datele de intrare prin metoda "read";
      *  Cu ajutorul acestor informatii, este creata lista de copii
-     *  din anul 0, iar apoi restul. Aceste liste sunt adaugate in
+     *  din anul 0, iar apoi restul, listele fiind si sortate
+     *  crescator dupa id-ul fiecarui copil. Aceste liste sunt adaugate in
      *  campul annualChildren al obiectului output, care este folosit
      *  ca parametru la scrierea in fisiere. Pe langa cele de citire, sunt
      *  apelate urmatoarele metode: "getFirstYearList" care construieste

@@ -22,9 +22,7 @@ public class WriteOutput {
 
         try {
             objectMapper.writeValue(new File(outputPath), output);
-
-        } catch (
-                IOException exception) {
+        } catch (IOException exception) {
             exception.printStackTrace();
         }
 

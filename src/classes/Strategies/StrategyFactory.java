@@ -24,21 +24,15 @@ public final class StrategyFactory {
     public static UpdateChildrenStrategy createStrategy(final String strategy,
                                                         final Child child) {
         switch (strategy) {
-            case Constants.BABY: {
+            case Constants.BABY:
                 return new BabyUpdateStrategy(child);
-            }
-            case Constants.KID: {
+            case Constants.KID:
                 return new KidUpdateStrategy(child);
-            }
-            case Constants.TEEN: {
+            case Constants.TEEN:
                 return new TeenUpdateStrategy(child);
-            }
-            case Constants.YOUNG_ADULT: {
+            case Constants.YOUNG_ADULT:
                 return new YoungAdultUpdateStrategy(child);
-            }
-            default: {
-
-            }
+            default:
         }
         throw new IllegalArgumentException("The strategy type " + strategy + " is not recognized.");
     }

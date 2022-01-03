@@ -27,20 +27,15 @@ public final class ChildrenFactory {
      */
     public static Child createChild(final String type, final Child child) {
         switch (type) {
-            case Constants.BABY: {
+            case Constants.BABY:
                 return new Baby(child);
-            }
-            case Constants.KID: {
+            case Constants.KID:
                 return new Kid(child);
-            }
-            case Constants.TEEN: {
+            case Constants.TEEN:
                 return new Teen(child);
-            }
-            case Constants.YOUNG_ADULT: {
+            case Constants.YOUNG_ADULT:
                 return new YoungAdult(child);
-            }
-            default: {
-            }
+            default:
         }
         throw new IllegalArgumentException("The child type " + type + " is not recognized.");
     }

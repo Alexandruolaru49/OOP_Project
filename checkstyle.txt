@@ -1,13 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Factory\ChildrenFactory.java:30:34: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Factory\ChildrenFactory.java:33:33: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Factory\ChildrenFactory.java:36:34: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Factory\ChildrenFactory.java:39:41: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Factory\ChildrenFactory.java:42:22: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Strategies\StrategyFactory.java:27:34: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Strategies\StrategyFactory.java:30:33: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Strategies\StrategyFactory.java:33:34: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Strategies\StrategyFactory.java:36:41: Avoid nested blocks. [AvoidNestedBlocks]
-[ERROR] C:\Users\olaru\Desktop\OOP_Project\.\src\classes\Strategies\StrategyFactory.java:39:22: Avoid nested blocks. [AvoidNestedBlocks]
 Audit done.
-Checkstyle ends with 10 errors.
